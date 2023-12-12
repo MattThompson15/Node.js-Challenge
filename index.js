@@ -53,10 +53,26 @@ const questions = [
 ];
     
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data, (err) => {
+        if (err) {
+            console.error(err);
+        } else{
+          console.log(`File ${fileName} written succesfully!`);
+        }
+      });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((answers) => {
+            const readmeContent =`
+
+        
+        
+}
 
 // Function call to initialize app
 init();
