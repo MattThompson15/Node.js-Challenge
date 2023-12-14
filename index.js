@@ -67,8 +67,32 @@ ${generateLicenseBadge(answers.license)}
 ## Description
 ${answers.description}
 
-## Table of Contents`
+## Table of Contents
+-[Installation](#installation)
+-[Usage](#usage)
+-[License](#license)
+-[Contributing](#contributing)
+-Tests(#tests)
+-[Questions](#questions)
 
+##Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+This application is covered by the $answers.license license.  See the [License] [License] file for details.
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
+## Questions
+For questions about this project, please contact [@${answers.githubUsername}](https://github.com/${answers.githubUsername}).  You can also reach out via email at [${answers.email}](mailto:${answers.email}).
+`;
 }
     
 // TODO: Create a function to write README file
