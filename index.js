@@ -111,25 +111,13 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            const readmeContent =`
+            const readmeContent = generateReadmeContent(answers);
+            const outputFileName = 'README.md';
 
-# ${answers.projectTitle}
+            writeToFile outputFileName, readmeContent;
+        })
+        .catch((error) => console.error(error));
+    
 
-## Description
-${answers.description}
 
-## Installation
-${answers.installation}
 
-## Usage
-${answers.usage}
-
-## License
-[![License: $answers.license}](https://img.shields.io/License-${answers}-brightgree)]
-
-        
-        
-}
-
-// Function call to initialize app
-init();
