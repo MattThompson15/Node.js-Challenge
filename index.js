@@ -51,6 +51,25 @@ const questions = [
         message: 'Enter your email adress',
     },
 ];
+
+
+function generateLicenseBadge(license) {
+    return `[![License: ${license}](https://img.shields.io/badge/License-${license}-brightgreen.svg)](https://opensource.org/licenses/${license})`;
+}
+
+function generateReadmeContent(answers) {
+    return `
+    
+# ${answers.projectTitle}
+
+${generateLicenseBadge(answers.license)}
+
+## Description
+${answers.description}
+
+## Table of Contents`
+
+}
     
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -69,6 +88,20 @@ function init() {
         .prompt(questions)
         .then((answers) => {
             const readmeContent =`
+
+# ${answers.projectTitle}
+
+## Description
+${answers.description}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+[![License: $answers.license}](https://img.shields.io/License-${answers}-brightgree)]
 
         
         
