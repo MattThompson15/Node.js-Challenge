@@ -1,7 +1,6 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+
 const questions = [
     {
         type: 'input',
@@ -72,7 +71,7 @@ ${answers.description}
 -[Usage](#usage)
 -[License](#license)
 -[Contributing](#contributing)
--Tests(#tests)
+-[Tests](#tests)
 -[Questions](#questions)
 
 ##Installation
@@ -82,7 +81,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-This application is covered by the $answers.license license.  See the [License] [License] file for details.
+This application is covered by the ${answers.license} license.  See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 ${answers.contributing}
@@ -95,28 +94,31 @@ For questions about this project, please contact [@${answers.githubUsername}](ht
 `;
 }
     
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data, (err) => {
         if (err) {
-            console.error(err);
+          console.error(err);
         } else{
           console.log(`File ${fileName} written succesfully!`);
         }
       });
 }
 
-// TODO: Create a function to initialize app
+
 function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            const readmeContent = generateReadmeContent(answers);
-            const outputFileName = 'README.md';
+        const readmeContent = generateReadmeContent(answers);
+        const outputFileName = 'README.md';
 
-            writeToFile outputFileName, readmeContent;
-        })
+        writeToFile(outputFileName, readmeContent);
+    })
         .catch((error) => console.error(error));
+}
+
+init();
+
     
 
 
