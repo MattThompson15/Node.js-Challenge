@@ -32,3 +32,13 @@ There are currently no tests for this project.
 
 ## Questions
 For questions about this project, please contact [@MattThompson15](https://github.com/MattThompson15).  You can also reach out via email at [matthewthompson118@gmail.com](mailto:matthewthompson118@gmail.com).
+
+## Gallery
+<img width="1440" alt="Screenshot 2023-12-14 at 11 00 09 PM" src="https://github.com/MattThompson15/Node.js-Challenge/assets/139708928/b4ca8827-c713-458f-93ba-905697c844ee">
+<img width="1440" alt="Screenshot 2023-12-14 at 11 20 30 PM" src="https://github.com/MattThompson15/Node.js-Challenge/assets/139708928/2ab7d07e-d372-4f17-ad72-554471ff635e">
+
+## Video
+chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/8ac889fa-80cc-46de-y94d-d57d30d13e7c
+
+
+
