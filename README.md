@@ -40,6 +40,9 @@ For questions about this project, please contact [@MattThompson15](https://githu
 ## Video
 https://drive.google.com/file/d/1Tkd7mEn6yuVFuql-ETwmBWUCR9YKza4I/view?usp=sharing
 
+## Credit
+* Xpert Learning Assistant for organizing app layout, help with functions etc
+
 
 
 
