@@ -1,6 +1,8 @@
+//Required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+//Array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -25,7 +27,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributions',
+        name: 'contributing',
         message: 'Enter contribution guidelines',
     },
     {
@@ -51,12 +53,13 @@ const questions = [
     },
 ];
 
-
+// FUnction to generate license badge
 function generateLicenseBadge(license) {
     return `[![License: ${license}](https://img.shields.io/badge/License-${license}-brightgreen.svg)](https://opensource.org/licenses/${license})`;
 }
-
+// Function to generate README content based on user input
 function generateReadmeContent(answers) {
+    // Format for the README content using the provided user responses
     return `
     
 # ${answers.projectTitle}
@@ -93,7 +96,8 @@ ${answers.tests}
 For questions about this project, please contact [@${answers.githubUsername}](https://github.com/${answers.githubUsername}).  You can also reach out via email at [${answers.email}](mailto:${answers.email}).
 `;
 }
-    
+ 
+//Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data, (err) => {
         if (err) {
@@ -104,19 +108,22 @@ function writeToFile(fileName, data) {
       });
 }
 
-
+// Function to intialze the application
 function init() {
+    // Prompt the user for information using inquirer
     inquirer
         .prompt(questions)
         .then((answers) => {
+        // Generate README content using the provided responses
         const readmeContent = generateReadmeContent(answers);
+        // Specify the output file
         const outputFileName = 'README.md';
-
+        // Write the README file
         writeToFile(outputFileName, readmeContent);
     })
         .catch((error) => console.error(error));
 }
-
+// Function to initialze the application
 init();
 
     
