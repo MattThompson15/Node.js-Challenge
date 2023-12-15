@@ -25,7 +25,7 @@ Run 'node index.js' and follow the prompts to create a README.
 This application is covered by the MIT license.  See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
-undefined
+Xpert Learning Assistant.
 
 ## Tests
 There are currently no tests for this project.
