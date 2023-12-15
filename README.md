@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This project is a command-line tool that generates professional README files for your projects.
+The README generator is a command-line tool that automates the process of creating professional README files for your projects.  It prompts users with a series of questions and generates a Readme.md file.
 
 ## Table of Contents
 -[Installation](#installation)
@@ -16,16 +16,16 @@ This project is a command-line tool that generates professional README files for
 -[Questions](#questions)
 
 ##Installation
-clone the repository and run 'npm install' to install dependencies
+1. Clone the repository to your local machine. 2 Navigate to the project directory. 3. Install dependencies.
 
 ## Usage
-Run 'node index.js' and follow the prompts to create a README.
+To run the README generator use the following command, 'node index.js'.
 
 ## License
 This application is covered by the MIT license.  See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
-undefined
+Contributions are welcome!
 
 ## Tests
 There are currently no tests for this project.
